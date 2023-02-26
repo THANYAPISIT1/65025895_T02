@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            color: rgb(0, 146, 250);
+        }
+        body{
+            margin: 50px 0 0 50px;
+        }
+    </style>
+</head>
+<body>
+    Name &nbsp;&nbsp;&nbsp;&nbsp; <br>
+    <input type="text" id="NameInput" onfocus="FocusBox(this)" onblur="BlurBox(this)" onchange="removeInstName()">
+
+    <br><br>
+    Surname <br>
+    <input type="text" id="SurnameInput" onfocus="FocusBox(this)" onblur="BlurBox(this)" onchange="removeInstSur()">
+    <br><br>
+
+    Date of Birth <br>
+    <br>
+    <input type="date" id="DateInput" onchange="removeInstBD()">
+
+    <br><br>
+    Select your langauge <br>
+    <br>
+    <select id="menu" onchange="removeSelLang()">
+        <option>--> Select your langauge <--</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="Html">Html</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="C+">C+</option>
+    </select>
+
+    <br><br>
+    <button id="submit" onclick="Submit()"> Submit </button>
+
+    <br><br>
+    <h1 id="Output"></h1>
+    <h1 id="InsertName" class="text"> Insert Name </h1>
+    <h1 id="InsertSurname" class="text"> Insert Surname </h1>
+    <h1 id="InsertDate" class="text"> Insert Birth date </h1>
+    <h1 id="SelectLang" class="text"> Select langauge </h1>
+
+    <script src="T02.js"></script>
+</body>
+</html>
